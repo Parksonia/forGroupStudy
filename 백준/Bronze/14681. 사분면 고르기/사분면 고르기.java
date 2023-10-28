@@ -6,7 +6,7 @@ public class Main{
         int x = sc.nextInt();
         int y = sc.nextInt();
         
-        //if((x!=0 && x>-1000 && x<1000)&&(y!=0 && y>-1000 && y<1000)){
+        if((x!=0 && x>=-1000 && x<=1000)&&(y!=0 && y>=-1000 && y<=1000)){
             if(x>0 && y>0){
                 System.out.println("1");
             }else if(x<0 && y>0){
@@ -16,7 +16,7 @@ public class Main{
             }else if(x>0 && y<0){
                 System.out.println("4");
             }
-        //}
+        }
         
         
     }
