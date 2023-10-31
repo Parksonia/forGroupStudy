@@ -4,6 +4,7 @@ class Solution {
         
         for(int i=0; i<n; i++){
             answer[i]= x*((long)i+1);
+             //int i long으로 형변환 안해줘서 테스트 13,14, 에러남..
         }
         return answer;
     }
