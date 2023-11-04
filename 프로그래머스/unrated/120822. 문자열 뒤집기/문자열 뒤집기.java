@@ -10,3 +10,19 @@ class Solution {
         return answer;
     }
 }
+
+/*
++ 연산 방법은 낭비가 심함! 메모리를 위해서 사용해야하는 방법!!
+class Solution {
+    public String solution(String my_string) {
+        String answer = "";
+    
+        //StringBuffer sbf = new StringBufffer(my_string);
+        StringBuilder sb = new StringBuilder(my_string);
+        //answer=sbf.reverse().toString();
+        answer= sb.reverse().toString();    
+        
+        return answer;
+    }
+}
+*/
