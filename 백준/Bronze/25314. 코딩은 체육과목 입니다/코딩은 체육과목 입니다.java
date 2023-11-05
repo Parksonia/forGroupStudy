@@ -5,10 +5,10 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
         int n = Integer.parseInt(br.readLine())/4;
-        String answer ="";
+        StringBuilder answer = new StringBuilder();
         
         for(int i=0; i<n; i++){
-            answer+="long ";
+            answer.append("long ");
         }   
         System.out.println(answer+"int");
     }
