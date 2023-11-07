@@ -1,19 +1,11 @@
 import java.io.*;
-
+import java.util.*;
 public class Main{
-    public static void main(String args[]) throws IOException  {
+    public static void main(String args[]) throws Exception  {
     
-    	      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    	        
-    	       String input = br.readLine().trim();
-                 if(input.equals("")) {
-                    System.out.print(0);
-                     return;
-                }      
-        
-               String []arr = input.split(" ");
-    	        System.out.print(arr.length);
-               
-    	    }
-    	
+    	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    	        StringTokenizer st = new StringTokenizer(br.readLine()," ");               
+                    System.out.println(st.countTokens());
+                    br.close();
+          }	
     }
