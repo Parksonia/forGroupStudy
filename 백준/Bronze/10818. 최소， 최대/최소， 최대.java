@@ -5,13 +5,19 @@ public class Main {
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[]num =new int[n];
-        for(int i=0; i<n; i++){
-            num[i] =sc.nextInt();
+ 
+  
+        
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        
+         for(int i=0; i<n; i++){
+            int num = sc.nextInt();
+           min = Math.min(min,num);
+           max = Math.max(max,num);
         }
-        Arrays.sort(num);
-        sc.close();
-        System.out.print(num[0]+" "+num[n-1]);
+        
+        System.out.println(min+" "+max);
     } 
     
 }
