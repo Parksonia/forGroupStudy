@@ -1,3 +1,10 @@
+/*
+스스로 해결 못함
+1.boolean type 으로 해결할 생각 못함
+2. 간단한 방법으로 hashset 으로 .remove() .contains() 를 활용한 방법도 있음 
+*/
+
+
 import java.util.*;
 
 public class Main {
