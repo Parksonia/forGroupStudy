@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.*;  //HashSet
+import java.util.*;
 public class Main {
     public static void main (String[] args) throws IOException {
         
@@ -10,10 +10,9 @@ public class Main {
         for(int i=0; i<10; i++) { //10번 숫자 입력
             int num = Integer.parseInt(br.readLine());
             arr[i] = num%42;
+              hs.add(arr[i]); 
         }
-        for(int i=0; i<10; i++){
-            hs.add(arr[i]);    
-        }        
-        System.out.println(hs.size());  //Hashset 은 .size()
+         
+        System.out.println(hs.size());
     }
 }
