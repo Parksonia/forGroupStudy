@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.*;
+import java.util.*;  //HashSet
 public class Main {
     public static void main (String[] args) throws IOException {
         
@@ -12,8 +12,8 @@ public class Main {
             arr[i] = num%42;
         }
         for(int i=0; i<10; i++){
-            hs.add(arr[i]);    //
+            hs.add(arr[i]);    
         }        
-        System.out.println(hs.size());
+        System.out.println(hs.size());  //Hashset 은 .size()
     }
 }
