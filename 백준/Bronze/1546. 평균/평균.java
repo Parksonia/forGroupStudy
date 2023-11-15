@@ -1,32 +1,27 @@
-import java.util.Scanner;
-import java.util.Arrays;
-
+import java.io.*;
+import java.util.*;
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[]args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Scanner sc = new Scanner(System.in);
-
-        // Input: Number of subjects
+        //int n = Integer.parseInt(br.readLine());
         int n = sc.nextInt();
-
-        // Input: Sejun's current grades
-        int[] grades = new int[n];
-        for (int i = 0; i < n; i++) {
-            grades[i] = sc.nextInt();
+        int[] arr = new int[n];
+        
+        for(int i=0; i<n; i++){
+            //arr[i] =Integer.parseInt(br.readLine());
+            arr[i] = sc.nextInt();
         }
-
-        // Find the maximum grade
-        int maxGrade = Arrays.stream(grades).max().orElse(0);
-
-        // Calculate the new scores and sum
-        double sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += grades[i] * 100.0 / maxGrade;
+        Arrays.sort(arr);
+        int max = arr[arr.length-1];
+    
+        double sum =0;
+        for(int i=0; i<n;i++){
+            sum += arr[i]*100.0/max;
         }
+       
+            double avg = sum/n;
+          System.out.printf("%.2f%n", avg);
 
-        // Calculate the new average
-        double newAverage = sum / n;
-
-        // Output the new average
-        System.out.printf("%.2f%n", newAverage);
     }
 }
