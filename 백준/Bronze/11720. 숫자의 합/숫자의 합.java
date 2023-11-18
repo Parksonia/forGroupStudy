@@ -16,3 +16,8 @@ public class Main {
         System.out.println(sum);
     }
 }
+
+/*
+char[] 배열로도 활용 가능 .toCharArray(str)로 저장 
+Charater.getNumericValue(char) 숫자형태의 char를 int형으로 형변환 하여 문제 해결 
+*/
