@@ -13,8 +13,8 @@ public class Main {
          int b=0;
         for(int i=0; i<9; i++) {
           for(int j=0; j<9; j++){
-             max = Math.max(max,arr[i][j]);
-              if(arr[i][j]==max){
+             max = Math.max(max,arr[i][j]);  // if(arr[i][j]>max){max = arr[i][j];}
+              if(arr[i][j]==max){  
                a =i+1;
                b =j+1;
               }
