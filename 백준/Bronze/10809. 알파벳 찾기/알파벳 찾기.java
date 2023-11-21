@@ -30,3 +30,28 @@ public class Main {
         }
     }
 }
+
+/*
+indexOf() 를 활용하여 훨씬 간단하게 해결 할 수 있었음. indexOf가 찾는 문자의 인덱스를 반환하고 찾지 못할 경우 -1을 반환하는 것을 활용
+
+
+import java.io.*;
+
+class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        StringBuilder sb = new StringBuilder();
+
+        // 'a'에서 'z'까지 각 문자에 대해 반복
+        for (char c = 'a'; c <= 'z'; c++) {
+            // 입력 문자열에서 문자의 첫 번째 등장 위치를 추가
+            sb.append(str.indexOf(c)).append(" ");
+        }
+
+        // 결과 출력
+        System.out.println(sb);
+    }
+}
+
+*/
