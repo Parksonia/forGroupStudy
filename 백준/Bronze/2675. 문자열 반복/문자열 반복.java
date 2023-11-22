@@ -7,7 +7,7 @@ public class Main {
         
         for(int i=0; i<num; i++) {
             String[] arr =br.readLine().split(" ");
-            int n = Integer.parseInt(arr[0]);
+            int n = Integer.parseInt(arr[0]);  //NumberFormat Exception 숫자가 1 2 형태가 아니라 줄바꿈으로 입력 받게될 때 생기는 문제 
             String text = arr[1];
             StringBuilder sb = new StringBuilder();
          
