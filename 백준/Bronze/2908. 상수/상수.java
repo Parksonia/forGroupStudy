@@ -8,13 +8,12 @@ public class Main {
 
        String input = br.readLine();
        arr= input.split(" ");
-       
-
-        StringBuilder sb1 = new StringBuilder(arr[0]);
-        StringBuilder sb2 = new StringBuilder(arr[1]);
-
-        arr[0] = sb1.reverse().toString();
-        arr[1] = sb2.reverse().toString();
+            
+        for(int i=0; i<2; i++){
+            StringBuilder sb = new StringBuilder(arr[i]);
+            arr[i] = sb.reverse().toString(); //Builder의 reverse메서드는 객체를 생성시 뒤집어 주는게 아님 
+                                              // 그리고 String type으로 반환하기 위해 .toString()잊지말기
+        }
 
         Arrays.sort(arr);
         System.out.println(arr[arr.length - 1]);
