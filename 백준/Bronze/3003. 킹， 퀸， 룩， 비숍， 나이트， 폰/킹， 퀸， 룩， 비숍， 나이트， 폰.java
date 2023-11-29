@@ -13,10 +13,8 @@ public class Main {
         
         for(int i=0; i<chess.length; i++) {
             answer[i] = chess[i]-input[i];
+            System.out.print(answer[i]+" ");
         }
-        for(int j=0; j<6; j++){
-            System.out.print(answer[j]+" ");
-        }
-    
+      
     }
 }
