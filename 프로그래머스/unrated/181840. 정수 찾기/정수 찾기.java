@@ -4,7 +4,7 @@ class Solution {
         int answer = 0;
         List<Integer> arr = new ArrayList<>();
         for(int i: num_list){
-            arr.add(i);
+            arr.add(i);   //그냥 반복문 써서(==) 끝내도 됨..
         }
         
         if(arr.contains(n)) {answer=1;}
