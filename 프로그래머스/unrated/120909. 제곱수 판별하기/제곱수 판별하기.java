@@ -15,3 +15,15 @@ class Solution {
         return answer;
     }
 }
+/*
+다른 사람 풀이
+class Solution {
+    public int solution(int n) {
+        if (n % Math.sqrt(n) == 0) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+}
+*/
