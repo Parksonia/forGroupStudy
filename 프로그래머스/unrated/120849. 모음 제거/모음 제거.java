@@ -14,3 +14,8 @@ class Solution {
         return my_string;
     }
 }
+/*
+ replace 여러개 조건식을 | 또는 으로 바로 가능!!
+   return myString.replaceAll("a|e|i|o|u", "");
+
+*/
