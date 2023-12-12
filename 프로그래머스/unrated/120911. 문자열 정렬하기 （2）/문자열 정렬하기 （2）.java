@@ -8,6 +8,6 @@ class Solution {
         answer = String.valueOf(transfer);  //char[] 를 바로 String 으로 형변환
         
         
-        return answer;
+        return answer;  // retrun new String(transfer); 로 해도 됨
     }
 }
