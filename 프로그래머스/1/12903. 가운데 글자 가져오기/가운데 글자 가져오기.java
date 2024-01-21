@@ -13,3 +13,8 @@ class Solution {
         return answer;
     }
 }
+
+/*
+왜 .subString() 생각 못헀늬....?
+
+*/
