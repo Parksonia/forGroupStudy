@@ -21,6 +21,30 @@ public class Solution {
             answer[i] = stack.pop(); //.pop() : 스택의 마지막 값 꺼내기 
         }
         
+        return answer; // 반복문 말고 그냥 리턴 타입을 stack으로 변경하는 방법도 있음 
+    }
+}
+
+/* 처음에 시도 했던 방법에 index를 초과하는 문제가 있었음...
+import java.util.*;
+
+public class Solution {
+    public int[] solution(int []arr) {
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(arr[0]);  // 처음부터 0번째 인덱스를 넣고 시작했다면 해결됨..
+
+        for (int i = 1; i < arr.length; i++) {
+
+            if (arr[i] != arr[i - 1])
+                list.add(arr[i]);
+        }
+
+        int[] answer = new int[list.size()];
+
+        for (int i = 0; i < list.size(); i++)
+            answer[i] = list.get(i);
+
         return answer;
     }
 }
+*/
