@@ -7,7 +7,7 @@ class Solution {
         int temp =0;
         for(int i=0; i<s.length(); i++){
             System.out.println((int)s.charAt(i));
-            //3가지 조건! 대문자,소문자,공백일 때 하드코딩밖에 생각이 안남.. 리팩토링하기...
+            //3가지 조건! 대문자,소문자,공백일 때 하드코딩밖에 생각이 안남.. 리팩토링하기....
             
             if(Character.isUpperCase(s.charAt(i))) {
              temp = (int)s.charAt(i);
