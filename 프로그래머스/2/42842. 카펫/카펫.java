@@ -5,6 +5,7 @@ class Solution {
         
         
         //테두리는 한줄만 갈색이어야함 !!!! 주의!! 테두리(갈색)를 뺀 내부영역의 크기 => (a-2)(b-2)
+        
         int size = brown+yellow;
         int a = 0;
         int b = 0;
